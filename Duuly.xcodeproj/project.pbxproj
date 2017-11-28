@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		E226F6151FCCB9E8008C0C19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E226F6141FCCB9E8008C0C19 /* AppDelegate.swift */; };
-		E226F6171FCCB9E8008C0C19 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E226F6161FCCB9E8008C0C19 /* FirstViewController.swift */; };
-		E226F6191FCCB9E8008C0C19 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E226F6181FCCB9E8008C0C19 /* SecondViewController.swift */; };
 		E226F61C1FCCB9E8008C0C19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E226F61A1FCCB9E8008C0C19 /* Main.storyboard */; };
 		E226F61E1FCCB9E8008C0C19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E226F61D1FCCB9E8008C0C19 /* Assets.xcassets */; };
 		E226F6211FCCB9E8008C0C19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E226F61F1FCCB9E8008C0C19 /* LaunchScreen.storyboard */; };
+		E226F62B1FCD24B2008C0C19 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E226F62A1FCD24B2008C0C19 /* Extension.swift */; };
+		E226F62D1FCD25C0008C0C19 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E226F62C1FCD25C0008C0C19 /* Constant.swift */; };
+		E226F62F1FCD408D008C0C19 /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E226F62E1FCD408D008C0C19 /* CalendarVC.swift */; };
+		E226F6311FCD40A7008C0C19 /* CreateNewAppointmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E226F6301FCD40A7008C0C19 /* CreateNewAppointmentVC.swift */; };
+		E226F6331FCD40D1008C0C19 /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E226F6321FCD40D1008C0C19 /* MessageVC.swift */; };
+		E226F6351FCD4104008C0C19 /* ContactsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E226F6341FCD4104008C0C19 /* ContactsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E226F6111FCCB9E8008C0C19 /* Duuly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Duuly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E226F6141FCCB9E8008C0C19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E226F6161FCCB9E8008C0C19 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		E226F6181FCCB9E8008C0C19 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		E226F61B1FCCB9E8008C0C19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E226F61D1FCCB9E8008C0C19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E226F6201FCCB9E8008C0C19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E226F6221FCCB9E8008C0C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E226F62A1FCD24B2008C0C19 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		E226F62C1FCD25C0008C0C19 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		E226F62E1FCD408D008C0C19 /* CalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
+		E226F6301FCD40A7008C0C19 /* CreateNewAppointmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewAppointmentVC.swift; sourceTree = "<group>"; };
+		E226F6321FCD40D1008C0C19 /* MessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
+		E226F6341FCD4104008C0C19 /* ContactsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +65,16 @@
 			isa = PBXGroup;
 			children = (
 				E226F6141FCCB9E8008C0C19 /* AppDelegate.swift */,
-				E226F6161FCCB9E8008C0C19 /* FirstViewController.swift */,
-				E226F6181FCCB9E8008C0C19 /* SecondViewController.swift */,
 				E226F61A1FCCB9E8008C0C19 /* Main.storyboard */,
 				E226F61D1FCCB9E8008C0C19 /* Assets.xcassets */,
 				E226F61F1FCCB9E8008C0C19 /* LaunchScreen.storyboard */,
 				E226F6221FCCB9E8008C0C19 /* Info.plist */,
+				E226F62A1FCD24B2008C0C19 /* Extension.swift */,
+				E226F62C1FCD25C0008C0C19 /* Constant.swift */,
+				E226F62E1FCD408D008C0C19 /* CalendarVC.swift */,
+				E226F6301FCD40A7008C0C19 /* CreateNewAppointmentVC.swift */,
+				E226F6321FCD40D1008C0C19 /* MessageVC.swift */,
+				E226F6341FCD4104008C0C19 /* ContactsVC.swift */,
 			);
 			path = Duuly;
 			sourceTree = "<group>";
@@ -139,9 +151,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E226F6191FCCB9E8008C0C19 /* SecondViewController.swift in Sources */,
+				E226F6331FCD40D1008C0C19 /* MessageVC.swift in Sources */,
+				E226F6351FCD4104008C0C19 /* ContactsVC.swift in Sources */,
 				E226F6151FCCB9E8008C0C19 /* AppDelegate.swift in Sources */,
-				E226F6171FCCB9E8008C0C19 /* FirstViewController.swift in Sources */,
+				E226F6311FCD40A7008C0C19 /* CreateNewAppointmentVC.swift in Sources */,
+				E226F62F1FCD408D008C0C19 /* CalendarVC.swift in Sources */,
+				E226F62D1FCD25C0008C0C19 /* Constant.swift in Sources */,
+				E226F62B1FCD24B2008C0C19 /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +302,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobillopertechs.duuly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,7 +318,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mobillopertechs.duuly;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
