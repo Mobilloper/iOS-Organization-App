@@ -6,4 +6,7 @@ target 'Duuly' do
 pod 'FirebaseUI/Auth'
 pod 'FirebaseUI/Phone'
 
+use_frameworks!
+pod 'CountryList'
+
 end

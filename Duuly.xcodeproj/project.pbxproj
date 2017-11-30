@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		069D587EEE3E4443DBCA1B3F /* libPods-Duuly.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E064B7974058E506583EE7C /* libPods-Duuly.a */; };
 		E226F6151FCCB9E8008C0C19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E226F6141FCCB9E8008C0C19 /* AppDelegate.swift */; };
 		E226F61C1FCCB9E8008C0C19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E226F61A1FCCB9E8008C0C19 /* Main.storyboard */; };
 		E226F61E1FCCB9E8008C0C19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E226F61D1FCCB9E8008C0C19 /* Assets.xcassets */; };
@@ -18,11 +17,13 @@
 		E226F6311FCD40A7008C0C19 /* CreateNewAppointmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E226F6301FCD40A7008C0C19 /* CreateNewAppointmentVC.swift */; };
 		E226F6331FCD40D1008C0C19 /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E226F6321FCD40D1008C0C19 /* MessageVC.swift */; };
 		E226F6351FCD4104008C0C19 /* ContactsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E226F6341FCD4104008C0C19 /* ContactsVC.swift */; };
-		E28CB1DF1FCF143700567F76 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28CB1DE1FCF143700567F76 /* LoginVC.swift */; };
+		E28CB1DF1FCF143700567F76 /* PhoneNumInputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28CB1DE1FCF143700567F76 /* PhoneNumInputVC.swift */; };
+		E2F9D9341FCFE968005B837C /* VerificationCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F9D9331FCFE968005B837C /* VerificationCodeVC.swift */; };
+		E2F9D93A1FD00557005B837C /* Handy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F9D9391FD00557005B837C /* Handy.swift */; };
+		F81ABAFF44A114D2E63D5291 /* Pods_Duuly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E51FE296AA0ABC25979E3917 /* Pods_Duuly.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9E064B7974058E506583EE7C /* libPods-Duuly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Duuly.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB89BB7F46DC3E82AA3A086 /* Pods-Duuly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Duuly.release.xcconfig"; path = "Pods/Target Support Files/Pods-Duuly/Pods-Duuly.release.xcconfig"; sourceTree = "<group>"; };
 		E226F6111FCCB9E8008C0C19 /* Duuly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Duuly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E226F6141FCCB9E8008C0C19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,7 +38,10 @@
 		E226F6321FCD40D1008C0C19 /* MessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
 		E226F6341FCD4104008C0C19 /* ContactsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsVC.swift; sourceTree = "<group>"; };
 		E28CB1DD1FCEB5D900567F76 /* Duuly.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Duuly.entitlements; sourceTree = "<group>"; };
-		E28CB1DE1FCF143700567F76 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		E28CB1DE1FCF143700567F76 /* PhoneNumInputVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumInputVC.swift; sourceTree = "<group>"; };
+		E2F9D9331FCFE968005B837C /* VerificationCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationCodeVC.swift; sourceTree = "<group>"; };
+		E2F9D9391FD00557005B837C /* Handy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Handy.swift; sourceTree = "<group>"; };
+		E51FE296AA0ABC25979E3917 /* Pods_Duuly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Duuly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC6DE012AACA4154B926948F /* Pods-Duuly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Duuly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Duuly/Pods-Duuly.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				069D587EEE3E4443DBCA1B3F /* libPods-Duuly.a in Frameworks */,
+				F81ABAFF44A114D2E63D5291 /* Pods_Duuly.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +102,7 @@
 		E226F6361FCDC8BC008C0C19 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E2F9D9391FD00557005B837C /* Handy.swift */,
 				E226F62A1FCD24B2008C0C19 /* Extension.swift */,
 				E226F62C1FCD25C0008C0C19 /* Constant.swift */,
 			);
@@ -107,7 +112,8 @@
 		E226F6371FCDC8C1008C0C19 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E28CB1DE1FCF143700567F76 /* LoginVC.swift */,
+				E28CB1DE1FCF143700567F76 /* PhoneNumInputVC.swift */,
+				E2F9D9331FCFE968005B837C /* VerificationCodeVC.swift */,
 				E226F62E1FCD408D008C0C19 /* CalendarVC.swift */,
 				E226F6301FCD40A7008C0C19 /* CreateNewAppointmentVC.swift */,
 				E226F6321FCD40D1008C0C19 /* MessageVC.swift */,
@@ -119,7 +125,7 @@
 		E5A312318DA79C47A62EEBAF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9E064B7974058E506583EE7C /* libPods-Duuly.a */,
+				E51FE296AA0ABC25979E3917 /* Pods_Duuly.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -243,9 +249,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Duuly/Pods-Duuly-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CountryList/CountryList.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CountryList.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -261,11 +276,13 @@
 			files = (
 				E226F6331FCD40D1008C0C19 /* MessageVC.swift in Sources */,
 				E226F6351FCD4104008C0C19 /* ContactsVC.swift in Sources */,
-				E28CB1DF1FCF143700567F76 /* LoginVC.swift in Sources */,
+				E28CB1DF1FCF143700567F76 /* PhoneNumInputVC.swift in Sources */,
 				E226F6151FCCB9E8008C0C19 /* AppDelegate.swift in Sources */,
+				E2F9D93A1FD00557005B837C /* Handy.swift in Sources */,
 				E226F6311FCD40A7008C0C19 /* CreateNewAppointmentVC.swift in Sources */,
 				E226F62F1FCD408D008C0C19 /* CalendarVC.swift in Sources */,
 				E226F62D1FCD25C0008C0C19 /* Constant.swift in Sources */,
+				E2F9D9341FCFE968005B837C /* VerificationCodeVC.swift in Sources */,
 				E226F62B1FCD24B2008C0C19 /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
