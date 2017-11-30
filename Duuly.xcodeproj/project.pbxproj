@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		069D587EEE3E4443DBCA1B3F /* libPods-Duuly.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E064B7974058E506583EE7C /* libPods-Duuly.a */; };
 		E226F6151FCCB9E8008C0C19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E226F6141FCCB9E8008C0C19 /* AppDelegate.swift */; };
 		E226F61C1FCCB9E8008C0C19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E226F61A1FCCB9E8008C0C19 /* Main.storyboard */; };
 		E226F61E1FCCB9E8008C0C19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E226F61D1FCCB9E8008C0C19 /* Assets.xcassets */; };
@@ -17,9 +18,12 @@
 		E226F6311FCD40A7008C0C19 /* CreateNewAppointmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E226F6301FCD40A7008C0C19 /* CreateNewAppointmentVC.swift */; };
 		E226F6331FCD40D1008C0C19 /* MessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E226F6321FCD40D1008C0C19 /* MessageVC.swift */; };
 		E226F6351FCD4104008C0C19 /* ContactsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E226F6341FCD4104008C0C19 /* ContactsVC.swift */; };
+		E28CB1DF1FCF143700567F76 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28CB1DE1FCF143700567F76 /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E064B7974058E506583EE7C /* libPods-Duuly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Duuly.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCB89BB7F46DC3E82AA3A086 /* Pods-Duuly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Duuly.release.xcconfig"; path = "Pods/Target Support Files/Pods-Duuly/Pods-Duuly.release.xcconfig"; sourceTree = "<group>"; };
 		E226F6111FCCB9E8008C0C19 /* Duuly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Duuly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E226F6141FCCB9E8008C0C19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E226F61B1FCCB9E8008C0C19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -32,6 +36,9 @@
 		E226F6301FCD40A7008C0C19 /* CreateNewAppointmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewAppointmentVC.swift; sourceTree = "<group>"; };
 		E226F6321FCD40D1008C0C19 /* MessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageVC.swift; sourceTree = "<group>"; };
 		E226F6341FCD4104008C0C19 /* ContactsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsVC.swift; sourceTree = "<group>"; };
+		E28CB1DD1FCEB5D900567F76 /* Duuly.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Duuly.entitlements; sourceTree = "<group>"; };
+		E28CB1DE1FCF143700567F76 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		FC6DE012AACA4154B926948F /* Pods-Duuly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Duuly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Duuly/Pods-Duuly.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +46,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				069D587EEE3E4443DBCA1B3F /* libPods-Duuly.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		707749D6657B313F6352806B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC6DE012AACA4154B926948F /* Pods-Duuly.debug.xcconfig */,
+				DCB89BB7F46DC3E82AA3A086 /* Pods-Duuly.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E226F6081FCCB9E8008C0C19 = {
 			isa = PBXGroup;
 			children = (
 				E226F6131FCCB9E8008C0C19 /* Duuly */,
 				E226F6121FCCB9E8008C0C19 /* Products */,
+				707749D6657B313F6352806B /* Pods */,
+				E5A312318DA79C47A62EEBAF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,18 +84,44 @@
 			isa = PBXGroup;
 			children = (
 				E226F6141FCCB9E8008C0C19 /* AppDelegate.swift */,
+				E226F6371FCDC8C1008C0C19 /* Controller */,
+				E226F6361FCDC8BC008C0C19 /* Model */,
 				E226F61A1FCCB9E8008C0C19 /* Main.storyboard */,
 				E226F61D1FCCB9E8008C0C19 /* Assets.xcassets */,
 				E226F61F1FCCB9E8008C0C19 /* LaunchScreen.storyboard */,
 				E226F6221FCCB9E8008C0C19 /* Info.plist */,
+				E28CB1DD1FCEB5D900567F76 /* Duuly.entitlements */,
+			);
+			path = Duuly;
+			sourceTree = "<group>";
+		};
+		E226F6361FCDC8BC008C0C19 /* Model */ = {
+			isa = PBXGroup;
+			children = (
 				E226F62A1FCD24B2008C0C19 /* Extension.swift */,
 				E226F62C1FCD25C0008C0C19 /* Constant.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E226F6371FCDC8C1008C0C19 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E28CB1DE1FCF143700567F76 /* LoginVC.swift */,
 				E226F62E1FCD408D008C0C19 /* CalendarVC.swift */,
 				E226F6301FCD40A7008C0C19 /* CreateNewAppointmentVC.swift */,
 				E226F6321FCD40D1008C0C19 /* MessageVC.swift */,
 				E226F6341FCD4104008C0C19 /* ContactsVC.swift */,
 			);
-			path = Duuly;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E5A312318DA79C47A62EEBAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E064B7974058E506583EE7C /* libPods-Duuly.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +131,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E226F6251FCCB9E8008C0C19 /* Build configuration list for PBXNativeTarget "Duuly" */;
 			buildPhases = (
+				AF0A5D230D23C22810C69E39 /* [CP] Check Pods Manifest.lock */,
 				E226F60D1FCCB9E8008C0C19 /* Sources */,
 				E226F60E1FCCB9E8008C0C19 /* Frameworks */,
 				E226F60F1FCCB9E8008C0C19 /* Resources */,
+				CFB78AC56701D56BFD63D179 /* [CP] Embed Pods Frameworks */,
+				1E683E2613BBA53AF7E74F96 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -112,6 +160,11 @@
 					E226F6101FCCB9E8008C0C19 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -146,6 +199,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E683E2613BBA53AF7E74F96 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Duuly/Pods-Duuly-resources.sh",
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle,
+				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebasePhoneAuthUI.bundle,
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Duuly/Pods-Duuly-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF0A5D230D23C22810C69E39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Duuly-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFB78AC56701D56BFD63D179 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Duuly/Pods-Duuly-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E226F60D1FCCB9E8008C0C19 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -153,6 +261,7 @@
 			files = (
 				E226F6331FCD40D1008C0C19 /* MessageVC.swift in Sources */,
 				E226F6351FCD4104008C0C19 /* ContactsVC.swift in Sources */,
+				E28CB1DF1FCF143700567F76 /* LoginVC.swift in Sources */,
 				E226F6151FCCB9E8008C0C19 /* AppDelegate.swift in Sources */,
 				E226F6311FCD40A7008C0C19 /* CreateNewAppointmentVC.swift in Sources */,
 				E226F62F1FCD408D008C0C19 /* CalendarVC.swift in Sources */,
@@ -292,8 +401,10 @@
 		};
 		E226F6261FCCB9E8008C0C19 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC6DE012AACA4154B926948F /* Pods-Duuly.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Duuly/Duuly.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TYHZ5K5JFC;
 				INFOPLIST_FILE = Duuly/Info.plist;
@@ -308,8 +419,10 @@
 		};
 		E226F6271FCCB9E8008C0C19 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCB89BB7F46DC3E82AA3A086 /* Pods-Duuly.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Duuly/Duuly.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TYHZ5K5JFC;
 				INFOPLIST_FILE = Duuly/Info.plist;

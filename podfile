@@ -1,0 +1,9 @@
+
+platform :ios, '9.0'
+
+target 'Duuly' do
+	
+pod 'FirebaseUI/Auth'
+pod 'FirebaseUI/Phone'
+
+end
