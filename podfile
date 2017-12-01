@@ -8,5 +8,6 @@ pod 'FirebaseUI/Phone'
 
 use_frameworks!
 pod 'CountryList'
+pod 'FSCalendar'
 
 end

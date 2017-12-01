@@ -70,6 +70,11 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="II0-NV-90w">
+                                <rect key="frame" x="119" y="-72" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
@@ -80,7 +85,7 @@
             </objects>
             <point key="canvasLocation" x="2201" y="317"/>
         </scene>
-        <!--November 2017-->
+        <!--Data Source-->
         <scene sceneID="pjo-BI-rlb">
             <objects>
                 <viewController id="4c0-6z-aD6" customClass="CalendarVC" customModule="Duuly" customModuleProvider="target" sceneMemberID="viewController">
@@ -91,36 +96,22 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JO2-88-jDy">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dj4-k4-Q1T">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="110.5"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pLd-6G-oLW">
-                                                <rect key="frame" x="-0.5" y="0.0" width="375" height="110.5"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="XKe-cB-2NH">
-                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="110.5"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calendar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OtS-KJ-k31">
-                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="110.5"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                    </stackView>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dj4-k4-Q1T" customClass="FSCalendar">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="pLd-6G-oLW" firstAttribute="centerX" secondItem="dj4-k4-Q1T" secondAttribute="centerX" id="CMl-zU-GQx"/>
-                                            <constraint firstItem="pLd-6G-oLW" firstAttribute="height" secondItem="dj4-k4-Q1T" secondAttribute="height" id="L9n-N0-bYY"/>
-                                            <constraint firstItem="pLd-6G-oLW" firstAttribute="centerY" secondItem="dj4-k4-Q1T" secondAttribute="centerY" id="MPM-9V-Tsg"/>
-                                            <constraint firstItem="pLd-6G-oLW" firstAttribute="width" secondItem="dj4-k4-Q1T" secondAttribute="width" id="OKH-Cm-IFx"/>
+                                            <constraint firstAttribute="height" constant="300" id="bD5-2b-RI2"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="showsScopeHandle" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="4c0-6z-aD6" id="CmL-to-2fJ"/>
+                                            <outlet property="delegate" destination="4c0-6z-aD6" id="evw-Cd-mE9"/>
+                                        </connections>
                                     </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="38" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kGE-kc-s94">
-                                        <rect key="frame" x="0.0" y="111" width="375" height="443"/>
+                                        <rect key="frame" x="0.0" y="300" width="375" height="254"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="appointmentcell" rowHeight="62" id="4Fx-vC-SaA">
@@ -223,14 +214,13 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="kGE-kc-s94" firstAttribute="height" secondItem="JO2-88-jDy" secondAttribute="height" multiplier="0.8" id="00X-lC-yd5"/>
-                                    <constraint firstItem="dj4-k4-Q1T" firstAttribute="height" secondItem="JO2-88-jDy" secondAttribute="height" multiplier="0.2" id="DSl-tf-cfU"/>
-                                    <constraint firstItem="kGE-kc-s94" firstAttribute="centerY" secondItem="JO2-88-jDy" secondAttribute="centerY" multiplier="1.2" id="N6U-74-ewf"/>
-                                    <constraint firstItem="kGE-kc-s94" firstAttribute="width" secondItem="JO2-88-jDy" secondAttribute="width" id="O36-nW-DYr"/>
-                                    <constraint firstItem="dj4-k4-Q1T" firstAttribute="width" secondItem="JO2-88-jDy" secondAttribute="width" id="XXD-Xw-iMZ"/>
-                                    <constraint firstItem="dj4-k4-Q1T" firstAttribute="centerY" secondItem="JO2-88-jDy" secondAttribute="centerY" multiplier="0.2" id="Xt7-pM-fOv"/>
-                                    <constraint firstItem="kGE-kc-s94" firstAttribute="centerX" secondItem="JO2-88-jDy" secondAttribute="centerX" id="ecz-cN-t0b"/>
-                                    <constraint firstItem="dj4-k4-Q1T" firstAttribute="centerX" secondItem="JO2-88-jDy" secondAttribute="centerX" id="nIE-su-Cfp"/>
+                                    <constraint firstAttribute="bottom" secondItem="kGE-kc-s94" secondAttribute="bottom" id="OS3-ef-FBZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="kGE-kc-s94" secondAttribute="trailing" id="aXe-JU-5AA"/>
+                                    <constraint firstItem="kGE-kc-s94" firstAttribute="top" secondItem="dj4-k4-Q1T" secondAttribute="bottom" id="gvs-uI-bzS"/>
+                                    <constraint firstAttribute="trailing" secondItem="dj4-k4-Q1T" secondAttribute="trailing" id="kWT-qx-vPJ"/>
+                                    <constraint firstItem="dj4-k4-Q1T" firstAttribute="leading" secondItem="JO2-88-jDy" secondAttribute="leading" id="u7I-hm-Ccb"/>
+                                    <constraint firstItem="dj4-k4-Q1T" firstAttribute="top" secondItem="JO2-88-jDy" secondAttribute="top" id="ugy-CD-kTw"/>
+                                    <constraint firstItem="kGE-kc-s94" firstAttribute="leading" secondItem="JO2-88-jDy" secondAttribute="leading" id="zpG-nV-HfV"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kh2-uF-zXy">
@@ -263,12 +253,15 @@
                     <navigationItem key="navigationItem" title="November 2017" id="0Fv-iP-Ff4"/>
                     <connections>
                         <outlet property="btnNewAppointment" destination="Kh2-uF-zXy" id="gIX-xw-NIv"/>
+                        <outlet property="calendarHeightContstraint" destination="bD5-2b-RI2" id="Icy-WU-s3I"/>
+                        <outlet property="tvAppointments" destination="kGE-kc-s94" id="X0s-PV-3JR"/>
+                        <outlet property="vCalendar" destination="dj4-k4-Q1T" id="LLo-y7-N6K"/>
                         <segue destination="HvA-BC-18i" kind="show" identifier="newappointment" id="Ph8-T9-ikS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1fn-7E-Lo8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3121" y="314"/>
+            <point key="canvasLocation" x="3120.8000000000002" y="313.49325337331339"/>
         </scene>
         <!--Your Phone Number-->
         <scene sceneID="9r4-YN-wXV">
