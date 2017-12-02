@@ -12,7 +12,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Hello-->
+        <!--Contacts-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="ContactsVC" customModule="Duuly" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,11 +32,17 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Hello" id="lPx-At-cxQ"/>
+                    <navigationItem key="navigationItem" title="Contacts" id="lPx-At-cxQ">
+                        <barButtonItem key="rightBarButtonItem" image="menu" id="Zgz-yz-Umr">
+                            <connections>
+                                <segue destination="Zdw-Hg-7Hh" kind="presentation" id="gMh-nF-YGU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1239" y="314"/>
+            <point key="canvasLocation" x="110" y="342"/>
         </scene>
         <!--Create New Appointment-->
         <scene sceneID="AaS-QD-Fw8">
@@ -52,9 +58,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q4E-sg-PLW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3121" y="1051"/>
+            <point key="canvasLocation" x="1993" y="1086"/>
         </scene>
-        <!--Title-->
+        <!--Messages-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="MessageVC" customModule="Duuly" customModuleProvider="target" sceneMemberID="viewController">
@@ -79,11 +85,17 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="2HF-qt-JfO"/>
+                    <navigationItem key="navigationItem" title="Messages" id="2HF-qt-JfO">
+                        <barButtonItem key="rightBarButtonItem" image="menu" id="llQ-Ii-h8c">
+                            <connections>
+                                <segue destination="Zdw-Hg-7Hh" kind="presentation" id="AdM-xC-NE9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2201" y="317"/>
+            <point key="canvasLocation" x="1073" y="345"/>
         </scene>
         <!--Data Source-->
         <scene sceneID="pjo-BI-rlb">
@@ -182,7 +194,7 @@
                                                             </constraints>
                                                         </view>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GDZ-N1-3P1">
-                                                            <rect key="frame" x="340" y="20.5" width="16" height="22"/>
+                                                            <rect key="frame" x="340" y="21" width="16" height="22"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="16" id="4fo-fD-mB5"/>
                                                                 <constraint firstAttribute="height" constant="22" id="x4S-UK-pZ4"/>
@@ -250,7 +262,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UmY-vo-HE0"/>
                     </view>
-                    <navigationItem key="navigationItem" title="November 2017" id="0Fv-iP-Ff4"/>
+                    <navigationItem key="navigationItem" title="November 2017" id="0Fv-iP-Ff4">
+                        <barButtonItem key="rightBarButtonItem" image="menu" id="NsU-Vf-JU4">
+                            <connections>
+                                <segue destination="Zdw-Hg-7Hh" kind="presentation" id="Kjh-qj-w3B"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="btnNewAppointment" destination="Kh2-uF-zXy" id="gIX-xw-NIv"/>
                         <outlet property="calendarHeightContstraint" destination="bD5-2b-RI2" id="Icy-WU-s3I"/>
@@ -261,7 +279,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1fn-7E-Lo8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3120.8000000000002" y="313.49325337331339"/>
+            <point key="canvasLocation" x="1993" y="342"/>
         </scene>
         <!--Your Phone Number-->
         <scene sceneID="9r4-YN-wXV">
@@ -678,10 +696,10 @@
             </objects>
             <point key="canvasLocation" x="1813.5999999999999" y="-1227.4362818590705"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController id="49e-Tb-3d3" customClass="TabBarViewController" customModule="Duuly" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -714,7 +732,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k6R-qt-VPI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1239" y="-432"/>
+            <point key="canvasLocation" x="289" y="-429"/>
         </scene>
         <!--Calendar-->
         <scene sceneID="AZ8-Sv-nBH">
@@ -733,7 +751,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4kp-Zp-xWr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3121" y="-432"/>
+            <point key="canvasLocation" x="1814" y="-430"/>
         </scene>
         <!--Message-->
         <scene sceneID="urI-4m-uWb">
@@ -752,7 +770,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aGD-tR-c71" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2201" y="-432"/>
+            <point key="canvasLocation" x="1052" y="-429"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WY7-C4-x7x">
@@ -772,13 +790,81 @@
             </objects>
             <point key="canvasLocation" x="289" y="-1227"/>
         </scene>
+        <!--Side Menu Table View Controller-->
+        <scene sceneID="qTd-fJ-WWL">
+            <objects>
+                <tableViewController id="FEm-h2-atb" customClass="SideMenuTableViewController" customModule="Duuly" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Giv-F9-ryt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" id="fEe-XY-FJ8" customClass="SideMenuCell" customModule="Duuly" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fEe-XY-FJ8" id="voA-TJ-k7j">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="menuitem" translatesAutoresizingMaskIntoConstraints="NO" id="iQG-cj-C4S">
+                                            <rect key="frame" x="16" y="11" width="20" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsh-13-NVD">
+                                            <rect key="frame" x="44" y="12" width="173" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.2901960784" green="0.078431372550000003" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lblMenuItemName" destination="fsh-13-NVD" id="CML-U0-KjS"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="FEm-h2-atb" id="MUo-Gs-Vfg"/>
+                            <outlet property="delegate" destination="FEm-h2-atb" id="TA2-vq-YsB"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="WjZ-Ne-j9E"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hXo-yP-Yza" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3767" y="-430"/>
+        </scene>
+        <!--Side Menu Navigation Controller-->
+        <scene sceneID="AXg-Ko-oWi">
+            <objects>
+                <navigationController storyboardIdentifier="RightMenuNavigationController" id="Zdw-Hg-7Hh" customClass="UISideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="K5q-TI-LBK">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="leftSide" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="FEm-h2-atb" kind="relationship" relationship="rootViewController" id="2dU-UI-5zf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iql-Nm-3ay" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2988" y="-430"/>
+        </scene>
     </scenes>
     <resources>
         <image name="calendar" width="20" height="22"/>
         <image name="contacts" width="25" height="21"/>
+        <image name="menu" width="22" height="15"/>
+        <image name="menuitem" width="16" height="16"/>
         <image name="message" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Kjh-qj-w3B"/>
         <segue reference="xfP-c2-w2h"/>
     </inferredMetricsTieBreakers>
 </document>

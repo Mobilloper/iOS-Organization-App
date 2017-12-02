@@ -8,6 +8,7 @@
 
 import UIKit
 
-let navigationColor = "3AD9BA"
+let Navigation_Color = "3AD9BA"
+let TabBar_Index = 2
 
 

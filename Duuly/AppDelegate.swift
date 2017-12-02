@@ -16,10 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Tabbar tintcolor
-        UITabBar.appearance().tintColor = UIColor.init(navigationColor)
+        UITabBar.appearance().tintColor = UIColor.init(Navigation_Color)
         
         // Navigationbar tintcolor and titletextcolor
-        UINavigationBar.appearance().barTintColor = UIColor.init(navigationColor)
+        UINavigationBar.appearance().barTintColor = UIColor.init(Navigation_Color)
         UINavigationBar.appearance().tintColor = UIColor.white
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey(rawValue: NSAttributedStringKey.foregroundColor.rawValue): UIColor.white]
         

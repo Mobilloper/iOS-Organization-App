@@ -3,11 +3,12 @@ platform :ios, '9.0'
 
 target 'Duuly' do
 	
-pod 'FirebaseUI/Auth'
-pod 'FirebaseUI/Phone'
-
-use_frameworks!
-pod 'CountryList'
-pod 'FSCalendar'
+    use_frameworks!
+    pod 'FirebaseUI/Auth'
+    pod 'FirebaseUI/Phone'
+    pod 'CountryList'
+    pod 'FSCalendar'
+    pod 'SideMenu'
+    
 
 end

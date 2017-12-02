@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E21F005B1FD2053100FB19DA /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21F005A1FD2053100FB19DA /* SideMenuCell.swift */; };
 		E226F6151FCCB9E8008C0C19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E226F6141FCCB9E8008C0C19 /* AppDelegate.swift */; };
 		E226F61C1FCCB9E8008C0C19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E226F61A1FCCB9E8008C0C19 /* Main.storyboard */; };
 		E226F61E1FCCB9E8008C0C19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E226F61D1FCCB9E8008C0C19 /* Assets.xcassets */; };
@@ -20,11 +21,14 @@
 		E28CB1DF1FCF143700567F76 /* PhoneNumInputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28CB1DE1FCF143700567F76 /* PhoneNumInputVC.swift */; };
 		E2F9D9341FCFE968005B837C /* VerificationCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F9D9331FCFE968005B837C /* VerificationCodeVC.swift */; };
 		E2F9D93A1FD00557005B837C /* Handy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F9D9391FD00557005B837C /* Handy.swift */; };
+		E2FA40291FD1E3A6006FC733 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FA40281FD1E3A5006FC733 /* TabBarViewController.swift */; };
+		E2FA402B1FD1F84A006FC733 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FA402A1FD1F84A006FC733 /* SideMenuTableViewController.swift */; };
 		F81ABAFF44A114D2E63D5291 /* Pods_Duuly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E51FE296AA0ABC25979E3917 /* Pods_Duuly.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DCB89BB7F46DC3E82AA3A086 /* Pods-Duuly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Duuly.release.xcconfig"; path = "Pods/Target Support Files/Pods-Duuly/Pods-Duuly.release.xcconfig"; sourceTree = "<group>"; };
+		E21F005A1FD2053100FB19DA /* SideMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
 		E226F6111FCCB9E8008C0C19 /* Duuly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Duuly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E226F6141FCCB9E8008C0C19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E226F61B1FCCB9E8008C0C19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -42,6 +46,8 @@
 		E2F9D9331FCFE968005B837C /* VerificationCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationCodeVC.swift; sourceTree = "<group>"; };
 		E2F9D9391FD00557005B837C /* Handy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Handy.swift; sourceTree = "<group>"; };
 		E2F9D93B1FD01585005B837C /* Duuly-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Duuly-Bridging-Header.h"; sourceTree = "<group>"; };
+		E2FA40281FD1E3A5006FC733 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		E2FA402A1FD1F84A006FC733 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
 		E51FE296AA0ABC25979E3917 /* Pods_Duuly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Duuly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC6DE012AACA4154B926948F /* Pods-Duuly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Duuly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Duuly/Pods-Duuly.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +73,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E21F00591FD2051600FB19DA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E21F005A1FD2053100FB19DA /* SideMenuCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		E226F6081FCCB9E8008C0C19 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +103,7 @@
 		E226F6131FCCB9E8008C0C19 /* Duuly */ = {
 			isa = PBXGroup;
 			children = (
+				E21F00591FD2051600FB19DA /* Cell */,
 				E2F9D93C1FD0826D005B837C /* View */,
 				E226F6141FCCB9E8008C0C19 /* AppDelegate.swift */,
 				E226F6371FCDC8C1008C0C19 /* Controller */,
@@ -117,6 +132,8 @@
 			children = (
 				E28CB1DE1FCF143700567F76 /* PhoneNumInputVC.swift */,
 				E2F9D9331FCFE968005B837C /* VerificationCodeVC.swift */,
+				E2FA40281FD1E3A5006FC733 /* TabBarViewController.swift */,
+				E2FA402A1FD1F84A006FC733 /* SideMenuTableViewController.swift */,
 				E226F62E1FCD408D008C0C19 /* CalendarVC.swift */,
 				E226F6301FCD40A7008C0C19 /* CreateNewAppointmentVC.swift */,
 				E226F6321FCD40D1008C0C19 /* MessageVC.swift */,
@@ -264,6 +281,7 @@
 				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -272,6 +290,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,10 +307,13 @@
 			files = (
 				E226F6331FCD40D1008C0C19 /* MessageVC.swift in Sources */,
 				E226F6351FCD4104008C0C19 /* ContactsVC.swift in Sources */,
+				E2FA40291FD1E3A6006FC733 /* TabBarViewController.swift in Sources */,
 				E28CB1DF1FCF143700567F76 /* PhoneNumInputVC.swift in Sources */,
 				E226F6151FCCB9E8008C0C19 /* AppDelegate.swift in Sources */,
 				E2F9D93A1FD00557005B837C /* Handy.swift in Sources */,
 				E226F6311FCD40A7008C0C19 /* CreateNewAppointmentVC.swift in Sources */,
+				E2FA402B1FD1F84A006FC733 /* SideMenuTableViewController.swift in Sources */,
+				E21F005B1FD2053100FB19DA /* SideMenuCell.swift in Sources */,
 				E226F62F1FCD408D008C0C19 /* CalendarVC.swift in Sources */,
 				E226F62D1FCD25C0008C0C19 /* Constant.swift in Sources */,
 				E2F9D9341FCFE968005B837C /* VerificationCodeVC.swift in Sources */,
