@@ -8,6 +8,7 @@
 
 import UIKit
 import FSCalendar
+import SideMenu
 
 class CalendarVC: UIViewController, UITableViewDelegate, UITableViewDataSource, FSCalendarDelegate, FSCalendarDataSource, UIGestureRecognizerDelegate{
     
@@ -39,6 +40,7 @@ class CalendarVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
         super.viewDidLoad()
 
         initScreen()
+        initSideMenu()
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,6 +57,17 @@ class CalendarVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
         self.vCalendar.scope = .week
     }
     
+    func initSideMenu(){
+        
+        let menuRightNavigationController = storyboard!.instantiateViewController(withIdentifier: "RightMenuNavigationController") as! UISideMenuNavigationController
+        SideMenuManager.default.menuRightNavigationController = menuRightNavigationController
+        
+        SideMenuManager.default.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
+        SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
+        
+        SideMenuManager.default.menuPresentMode = .menuSlideIn
+        SideMenuManager.default.menuFadeStatusBar = false
+    }
     // MARK:- UIGestureRecognizerDelegate
     func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
         let shouldBegin = self.tvAppointments.contentOffset.y <= -self.tvAppointments.contentInset.top
@@ -94,18 +107,61 @@ class CalendarVC: UIViewController, UITableViewDelegate, UITableViewDataSource, 
         performSegue(withIdentifier: "newappointment", sender: nil)
     }
     
+    @IBAction func onSideMenu(_ sender: Any) {
+        present(SideMenuManager.default.menuRightNavigationController!, animated: true, completion: nil)
+    }
+    
     // MARK: - UITableViewDataSource
+    
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return 2
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "appointmentcell", for: indexPath)
+        cell.selectionStyle = .none
+        
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let tpHeader = UITableViewHeaderFooterView()
+        let header = tpHeader as UIView
+        var headerFrame = tableView.frame
+        headerFrame.size.height = 44
+        header.frame = headerFrame
+        
+        let lblDate = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: 44))
+        
+        lblDate.textAlignment = .center
+        lblDate.text = "Today, 9 September"
+        
+        header.addSubview(lblDate)
+        
+        let transition = CATransition()
+        transition.duration = 0.1
+        transition.type = kCATransitionPush
+        header.layer.add(transition, forKey: nil)
+        
+        return header
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let tmpFooter = UITableViewHeaderFooterView()
+        let footer = tmpFooter as UIView
+        
+        return footer
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 44
     }
     
     //MARK: - FSCalendarDelegate

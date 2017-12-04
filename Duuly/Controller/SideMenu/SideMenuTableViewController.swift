@@ -20,6 +20,9 @@ class SideMenuTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        navigationController?.navigationBar.barTintColor = UIColor.darkGray
+        self.tableView.tableFooterView = UIView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,14 +43,14 @@ class SideMenuTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath) as! SideMenuCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "menucell", for: indexPath) as! SideMenuCell
 
         if indexPath.row == numOfMenu {
             cell.lblMenuItemName.text = "My Profile"
         } else if indexPath.row == numOfMenu + 1 {
-            cell.lblMenuItemName.text = "Log out"
+            cell.lblMenuItemName.text = "My Profile"
         } else {
-            cell.lblMenuItemName.text = "Profile"
+            cell.lblMenuItemName.text = "My Profile"
         }
 
         return cell
@@ -89,10 +92,27 @@ class SideMenuTableViewController: UITableViewController {
     */
 
     //MARK: Table view delegate
+    
+    // MARK: - Table view data delegate
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        dismiss(animated: true) {
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "Notification"), object: indexPath)
+        switch indexPath.row {
+        case 0:
+            performSegue(withIdentifier: "Profile", sender: nil)
+        case 1:
+            performSegue(withIdentifier: "Profile", sender: nil)
+        case 2:
+            performSegue(withIdentifier: "Profile", sender: nil)
+        case 3:
+            performSegue(withIdentifier: "Profile", sender: nil)
+        case 4:
+            performSegue(withIdentifier: "Profile", sender: nil)
+        case 5:
+            performSegue(withIdentifier: "Profile", sender: nil)
+            
+        default:
+            break;
         }
         
     }

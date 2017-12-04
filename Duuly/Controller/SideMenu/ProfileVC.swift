@@ -1,14 +1,14 @@
 //
-//  ContactsVC.swift
+//  ProfileVC.swift
 //  Duuly
 //
-//  Created by ACoding on 11/27/17.
+//  Created by ACoding on 12/3/17.
 //  Copyright © 2017 Mobilloper. All rights reserved.
 //
 
 import UIKit
 
-class ContactsVC: UIViewController {
+class ProfileVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,4 +32,8 @@ class ContactsVC: UIViewController {
     }
     */
 
+    @IBAction func onBarBtnBack(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
 }

@@ -10,5 +10,6 @@
 #define Duuly_Bridging_Header_h
 
 #import <FSCalendar/FSCalendar.h>
+#import "TPKeyboardAvoidingTableView.h"
 
 #endif /* Duuly_Bridging_Header_h */

@@ -9,6 +9,6 @@ target 'Duuly' do
     pod 'CountryList'
     pod 'FSCalendar'
     pod 'SideMenu'
+    pod 'ATHMultiSelectionSegmentedControl'
     
-
 end
