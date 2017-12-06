@@ -27,10 +27,10 @@ class MessageVC: UIViewController, UITableViewDataSource, UITableViewDelegate{
         let menuRightNavigationController = storyboard!.instantiateViewController(withIdentifier: "RightMenuNavigationController") as! UISideMenuNavigationController
         SideMenuManager.default.menuRightNavigationController = menuRightNavigationController
 
-        SideMenuManager.default.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
-        SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
+//        SideMenuManager.default.menuAddPanGestureToPresent(toView: self.navigationController!.navigationBar)
+//        SideMenuManager.default.menuAddScreenEdgePanGesturesToPresent(toView: self.navigationController!.view)
         
-        SideMenuManager.default.menuPresentMode = .menuSlideIn
+        SideMenuManager.default.menuPresentMode = .viewSlideInOut
         SideMenuManager.default.menuFadeStatusBar = false
     }
     

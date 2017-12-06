@@ -17,6 +17,7 @@
 		E216EDF21FD50C270048BBE8 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E216EDEC1FD50C270048BBE8 /* TPKeyboardAvoidingScrollView.m */; };
 		E216EDF31FD50C270048BBE8 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E216EDEE1FD50C270048BBE8 /* TPKeyboardAvoidingTableView.m */; };
 		E216EDF41FD50C270048BBE8 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E216EDF01FD50C270048BBE8 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		E216EDF61FD5295E0048BBE8 /* NewAppmtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E216EDF51FD5295E0048BBE8 /* NewAppmtCell.swift */; };
 		E21F005B1FD2053100FB19DA /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21F005A1FD2053100FB19DA /* SideMenuCell.swift */; };
 		E226F6151FCCB9E8008C0C19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E226F6141FCCB9E8008C0C19 /* AppDelegate.swift */; };
 		E226F61C1FCCB9E8008C0C19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E226F61A1FCCB9E8008C0C19 /* Main.storyboard */; };
@@ -62,6 +63,7 @@
 		E216EDEE1FD50C270048BBE8 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
 		E216EDEF1FD50C270048BBE8 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
 		E216EDF01FD50C270048BBE8 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		E216EDF51FD5295E0048BBE8 /* NewAppmtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAppmtCell.swift; sourceTree = "<group>"; };
 		E21F005A1FD2053100FB19DA /* SideMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
 		E226F6111FCCB9E8008C0C19 /* Duuly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Duuly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E226F6141FCCB9E8008C0C19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				E216EDE21FD4FC720048BBE8 /* DateCell.swift */,
 				E216EDE41FD4FCB30048BBE8 /* AdditionCell.swift */,
 				E216EDE61FD4FCF30048BBE8 /* NotesCell.swift */,
+				E216EDF51FD5295E0048BBE8 /* NewAppmtCell.swift */,
 			);
 			path = NewAppointment;
 			sourceTree = "<group>";
@@ -372,8 +375,8 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Duuly/Pods-Duuly-resources.sh",
-				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle,
-				$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebasePhoneAuthUI.bundle,
+				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebaseAuthUI.bundle",
+				"$PODS_CONFIGURATION_BUILD_DIR/FirebaseUI/FirebasePhoneAuthUI.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -414,6 +417,7 @@
 				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/MultiSelectSegmentedControl/MultiSelectSegmentedControl.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -424,6 +428,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MultiSelectSegmentedControl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -448,6 +453,7 @@
 				E216EDE31FD4FC720048BBE8 /* DateCell.swift in Sources */,
 				E216EDE71FD4FCF30048BBE8 /* NotesCell.swift in Sources */,
 				E22957BE1FD2945100F58865 /* AppointmentDetailVC.swift in Sources */,
+				E216EDF61FD5295E0048BBE8 /* NewAppmtCell.swift in Sources */,
 				E226F6351FCD4104008C0C19 /* ContactsVC.swift in Sources */,
 				E2FA40291FD1E3A6006FC733 /* TabBarViewController.swift in Sources */,
 				E22957C01FD2991900F58865 /* AppointmentListTVCell.swift in Sources */,

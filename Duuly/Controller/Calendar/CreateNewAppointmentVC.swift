@@ -23,7 +23,7 @@ class CreateNewAppointmentVC: UIViewController, UITableViewDelegate, UITableView
     }
     //MARK: -TableViewDataSource
     public func numberOfSections(in tableView: UITableView) -> Int{
-        return 7
+        return 8
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 5 {
@@ -63,6 +63,10 @@ class CreateNewAppointmentVC: UIViewController, UITableViewDelegate, UITableView
             let cell = tableView.dequeueReusableCell(withIdentifier: "notes", for: indexPath) as! NotesCell
             cell.selectionStyle = .none
             return cell
+        case 7:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "new_appmt", for: indexPath) as! NewAppmtCell
+            cell.selectionStyle = .none
+            return cell
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: "contacts_input", for: indexPath) as! AppointmentStatusCell
             cell.selectionStyle = .none
@@ -83,10 +87,12 @@ class CreateNewAppointmentVC: UIViewController, UITableViewDelegate, UITableView
             return 64
         case 4:
             return 74
-        case 3:
+        case 5:
             return 62
-        case 4:
+        case 6:
             return 150
+        case 7:
+            return 62
         default:
             return 120
         }

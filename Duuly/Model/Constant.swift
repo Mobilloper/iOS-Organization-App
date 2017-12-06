@@ -9,6 +9,10 @@
 import UIKit
 
 let Navigation_Color = "3AD9BA"
+
+let Appmt_Category_Private = ""
+
+
 let TabBar_Index = 2
 
 

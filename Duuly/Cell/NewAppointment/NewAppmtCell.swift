@@ -1,22 +1,15 @@
 //
-//  appointmentListTVCell.swift
+//  NewAppmtCell.swift
 //  Duuly
 //
-//  Created by ACoding on 12/2/17.
+//  Created by ACoding on 12/3/17.
 //  Copyright © 2017 Mobilloper. All rights reserved.
 //
 
 import UIKit
 
-class AppointmentListTVCell: UITableViewCell {
+class NewAppmtCell: UITableViewCell {
 
-    //IBOutlets
-    @IBOutlet weak var vAppmtCategory: UIView!
-    @IBOutlet weak var lblAppmtTitle: UILabel!
-    @IBOutlet weak var lblAppmtStart: UILabel!
-    @IBOutlet weak var lblAppmtEnd: UILabel!
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
